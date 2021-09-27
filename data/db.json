@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "title": "Hello madafaka",
+      "details": "hellooo from my notes app",
+      "category": "work",
+      "id": 5
+    },
+    {
+      "title": "Reminder Link for NExt.js TUT",
+      "details": "www.google.com\n",
+      "category": "link",
+      "id": 6
+    }
+  ]
+}
