@@ -39,7 +39,7 @@ export default function Create() {
     title == '' && setTitleError(true)
     details == '' && setDetailsError(true)
    if(title&&details){
-     fetch('http://localhost:4000/notes',{
+     fetch('https://notes-app-ahmtadm.herokuapp.com/notes',{
        method:'POST',
        headers:{'Content-type':'application/json'},
        body:JSON.stringify({title,details,category})

@@ -8,12 +8,12 @@ import Masonry from 'react-masonry-css';
 export default function Notes() {
   const [notes, setNotes] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/notes')
+    fetch('https://notes-app-ahmtadm.herokuapp.com/notes')
       .then(res => res.json())
       .then(data => setNotes(data))
   }, [])
   const handleDelete = async (id) => {
-    await fetch('http://localhost:4000/notes/' + id, {
+    await fetch('https://notes-app-ahmtadm.herokuapp.com/notes/' + id, {
       method: 'DELETE'
     })
     const newNotes = notes.filter(note => note.id != id)
